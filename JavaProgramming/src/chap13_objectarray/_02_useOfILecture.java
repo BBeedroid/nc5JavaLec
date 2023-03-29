@@ -1,0 +1,24 @@
+package chap13_objectarray;
+
+import chap13_objectarray.clazz.English;
+import chap13_objectarray.clazz.ILecture;
+import chap13_objectarray.clazz.Mathmetics;
+import chap13_objectarray.clazz.Programming;
+
+public class _02_useOfILecture {
+
+	public static void main(String[] args) {
+		//인터페이스 객체배열 선언
+		ILecture[] ilArr = new ILecture[3];
+		
+		//객체배열 초기화
+		ilArr[0] = new English("English", 30, 50);
+		ilArr[1] = new Mathmetics("Mathmetics", 20, 40);
+		ilArr[2] = new Programming("Programming", 35, 60);
+		
+		//객체배열 사용
+		for(int i = 0; i < ilArr.length; i++) {
+			ilArr[i].proceedLecture();
+		}
+	}
+}

@@ -1,0 +1,16 @@
+package chap15_usefulClass01;
+
+public class _08_ceilRoundFloor {
+
+	public static void main(String[] args) {
+		double num = 123.45678;
+		
+		System.out.println(Math.ceil(num));
+		System.out.println((double)Math.round(num));
+		System.out.println(Math.floor(num));
+		
+		//소수점 둘째 자리까지 반올림
+		System.out.println((double)Math.round(num * 100) / 100);
+		
+	}
+}

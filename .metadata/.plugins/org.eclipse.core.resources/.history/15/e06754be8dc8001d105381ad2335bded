@@ -1,0 +1,17 @@
+package chap15_usefulClass;
+
+import java.util.Scanner;
+
+public class _05_string04 {
+
+	public static void main(String[] args) {
+		//사용자 입력 문자열 => 가비트나네이버다라마바클라우드
+		//비트, 네이버, 클라우드 찾아서 제거
+		//1. 사용자 입력
+		Scanner sc = new Scanner(System.in);
+		
+		String str = sc.nextLine();
+		System.out.println(str.replaceAll("비트", "")
+				.replace("네이버", "") .replace("클라우드", ""));
+	}
+}

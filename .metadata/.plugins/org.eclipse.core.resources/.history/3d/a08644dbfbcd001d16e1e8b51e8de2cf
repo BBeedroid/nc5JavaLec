@@ -1,0 +1,20 @@
+package chap18_enum;
+
+import chap18_enum.enums.Season;
+
+public class _06_useOfSeason {
+
+	public static void main(String[] args) {
+		Season spring = Season.SPRING;
+		Season summer = Season.SUMMER;
+		Season fall = Season.FALL;
+		Season winter = Season.WINTER;
+		
+		spring.printSeasonMonth();
+		summer.printSeasonMonth();
+		fall.printSeasonMonth();
+		winter.printSeasonMonth();
+
+	}
+
+}

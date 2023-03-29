@@ -1,0 +1,57 @@
+package march;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+public class _0327_basic {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+//		1. 정수형 데이터를 저장할 수 있는 ArrayList를 생성하고 사용자가 입력한 5개의 정수를 저장하고 출력하세요.
+		List<Integer> intList1 = new ArrayList<Integer>();
+		
+		while(true) {
+			System.out.println("정수 5개 입력: ");
+			String inputNum = sc.nextLine();
+			String[] iNum = inputNum.split(" ");
+			
+			try {
+				for(String sNum : iNum) {
+					intList1.add(Integer.valueOf(sNum));
+				}
+			}
+			catch(Exception e) {
+				System.out.println("잘못 입력하셨습니다.");
+				continue;
+			}
+			
+			System.out.println(intList1);
+			break;
+		}
+		
+		
+//		2. 정수형 데이터를 저장할 수 있는 LinkedList를 생성하고 사용자가 입력한 5개의 정수를 저장하고
+//		index가 3, 4번 요소를 값은 100, 200으로 변경하고 출력하세요.
+		
+		List<Integer> intList2 = new LinkedList<Integer>();
+		
+		While(true) {
+			System.out.println("정수 5개 입력: ");
+			String inputNum2 = sc.nextLine();
+			String[] iNum2 = inputNum2.split(" ");
+			
+			
+		}
+		
+//		3. Map<String, Integer>를 하나 생성하여 key는 알파벳(대소문자 구분)
+//		value는 해당 알파벳의 유니코드 값을 Integer형태로 저장하세요.
+
+		
+		
+	}
+
+}

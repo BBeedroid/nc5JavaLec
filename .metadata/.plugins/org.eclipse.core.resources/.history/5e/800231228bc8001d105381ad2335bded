@@ -1,0 +1,27 @@
+package chap15_usefulClass;
+
+import java.util.Scanner;
+
+public class _05_string04 {
+
+	public static void main(String[] args) {
+		//사용자 입력 문자열 => 가비트나네이버다라마바클라우드
+		//비트, 네이버, 클라우드 찾아서 제거
+		//1. 사용자 입력
+		Scanner sc = new Scanner(System.in);
+		System.out.println("문자열을 입력해주세요: ");
+		System.out.println("입력한 문자열은 " + sc.next() + "입니다.");
+		
+		//2. 사용자 입력한 문자열을 저장할 변수
+		String scStr = sc.next();
+		
+		//3. 비트, 네이버, 클라우드 찾기
+		System.out.println(scStr.indexOf("비트"));
+		System.out.println(scStr.indexOf("네이버"));
+		System.out.println(scStr.indexOf("클라우드"));
+		
+		
+
+	}
+
+}

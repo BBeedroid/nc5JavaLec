@@ -1,0 +1,20 @@
+package chap14_exception;
+
+public class _02_generateException {
+
+	public static void main(String[] args) {
+		try {
+			ArrayIndexOutOfBoundsException aie = new ArrayIndexOutOfBoundsException(
+					"인덱스가 초과됐습니다.");
+			throw aie;
+		} catch(NullPointerException ne) {
+			
+		} catch(ArithmeticException ae) {
+		
+		} catch(Exception e) {
+			//앞서 선언한 catch문을 모두 통과한 예외문도 처리할 수 있도록
+			//마지막 catch문에는 예외의 최상위 class Exception으로 처리한다
+			System.out.println(e.getMessage());
+		}
+	}
+}

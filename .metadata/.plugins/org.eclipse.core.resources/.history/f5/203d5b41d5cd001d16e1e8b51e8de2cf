@@ -1,0 +1,5 @@
+package chap18_enum.enums;
+
+public enum ValueMonth2 {
+	JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC;
+}

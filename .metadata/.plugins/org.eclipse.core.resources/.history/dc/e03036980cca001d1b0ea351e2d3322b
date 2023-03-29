@@ -1,0 +1,10 @@
+package chap15_usefulClass;
+
+public class _23_decimalFormat {
+
+	public static void main(String[] args) {
+		DecimalFormat df = new DecimalFormat("###,###");
+
+	}
+
+}

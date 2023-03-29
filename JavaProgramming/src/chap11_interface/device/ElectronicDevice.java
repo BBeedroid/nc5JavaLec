@@ -1,0 +1,15 @@
+package chap11_interface.device;
+
+public interface ElectronicDevice {
+	void powerOn();
+	void powerOff();
+	
+	default void reset() { //구현부 작성 가능
+		System.out.println("장치를 리셋합니다.");
+	}
+	
+	public static void warn() {
+		System.out.println("알람을 울리다.");
+	}
+	
+}

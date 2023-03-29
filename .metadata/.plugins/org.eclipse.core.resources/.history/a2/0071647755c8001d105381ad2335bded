@@ -1,0 +1,16 @@
+package chap13_objectarray.clazz;
+
+public class English implements ILecture {
+	public String subject = "English";
+	public int studentCnt = 30;
+	public int lectureTime = 50;
+	
+	@Override
+	public void proceedLecture() {
+		System.out.println(this.subject + "수업을 "
+				+ this.studentCnt + "명의 학생이 듣습니다. "
+				+ "수업 시간은 " + lectureTime + "분입니다.");
+
+	}
+
+}

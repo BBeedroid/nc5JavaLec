@@ -1,0 +1,30 @@
+package chap16_collectionFramework;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class _04_arrayListEx02 {
+
+	public static void main(String[] args) {
+		// 사용자가 입력한 문자열의 길이를 10만큼씩 잘라서 ArrayList에 저장
+		// 남은 문자열의 길이가 10보다 작으면 남은 문자열을 ArrayList에 저장
+		// e.g. abcdefghijklmnop => [abcdefghij, klmnop] 출력
+		Scanner sc = new Scanner(System.in);
+		System.out.println("문자열을 입력해주세요.");
+		String str = sc.nextLine();
+		
+		ArrayList<String> inputArr = new ArrayList<String>();
+		ArrayList<String> saveArr = new ArrayList<String>();
+		
+		inputArr.add(str);
+		
+		
+		for(int i = 0; i < inputArr.size(); i++) {
+			i += 10;
+			System.out.println(inputArr.get(i));
+		}
+		
+		sc.close();
+	}
+
+}
