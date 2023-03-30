@@ -2,19 +2,19 @@ package chap18_enum.enums;
 
 public enum Calculator {
 	PLUS("+") {
-		public int calculator(int a, int b) {
+		public int calculate(int a, int b) {
 			return a + b;
 		}
 	}, MINUS("-") {
-		public int calculator(int a, int b) {
+		public int calculate(int a, int b) {
 			return a - b;
 		}
 	}, MULTIPLY("*") {
-		public int calculator(int a, int b) {
+		public int calculate(int a, int b) {
 			return a * b;
 		}
 	}, DIVIDE("/") {
-		public int calculator(int a, int b) {
+		public int calculate(int a, int b) {
 			if(b == 0)
 				throw new ArithmeticException("분모는 0일 수 없습니다.");
 			return a / b;
@@ -32,6 +32,6 @@ public enum Calculator {
 	}
 	
 	//추상메소드 선언
-	public abstract int calculator(int a, int b);
+	public abstract int calculate(int a, int b);
 	
 }
